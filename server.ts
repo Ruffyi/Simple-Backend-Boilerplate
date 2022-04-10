@@ -14,6 +14,12 @@ app.get('/', (req: Request, res: Response) => {
 	});
 });
 
+app.get('/product', (req: Request, res: Response) => {
+	res.send({
+		message: 'PRoduct!!',
+	});
+});
+
 app.listen(SERVER_PORT, () => {
 	console.log(`Server is listening at port : ${SERVER_PORT}`);
 });
